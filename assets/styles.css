@@ -21,7 +21,7 @@ body{
     mix-blend-mode:lighten;
 }
 #header{
-    background-image: url("/Portfolio/assets/bg-landscape.jpeg");
+    background-image: url("/assets/bg-landscape.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
