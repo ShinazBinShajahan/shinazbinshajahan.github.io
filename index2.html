@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Portfolio/assets/styles2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/91449f4612.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Portfolio/assets/IMG_9738.jpeg" class="logo" alt="Shinaz">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-body">
+                <div class="header-image">
+                    <img src="/Portfolio/assets/icon-circle.png" alt="" srcset=""> </div>
+                <div class="header-text">
+                <h1><span>Hello,</span> I'm Shinaz Shajahan</h1>
+                <p>- and I'm a <a href="" class="typewrite" data-period="2000" 
+                    data-type='[ "Computer Science Engineer_", "Web Developer_", "Cyber Security Enthusiast_" ]'>
+                    <span class="wrap"></span>
+                </a></p>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+<div style="height:100vh; width:100%; background-color:aqua ;" id="about"></div>
+
+
+
+
+<script src="/Portfolio/assets/typewriter.js"></script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
