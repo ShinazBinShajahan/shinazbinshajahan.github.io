@@ -1,0 +1,163 @@
+a{
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Libre Baskerville', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #080808;
+    color:#fff;
+}
+.logo{
+    height: 60px;
+    mix-blend-mode:lighten;
+}
+#header{
+    background-image: url("/Portfolio/assets/bg-landscape.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    padding:10px 8%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a{
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 15%;
+    height: 3px;
+    background:#ff0416;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+    opacity: 50%;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    opacity: 100%;
+}
+.header-body{
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    flex-direction: row-reverse;
+    justify-content:center;
+}
+.header-body div{
+    display: inline-block;
+}
+.header-text , .header-text h1{
+    font-size: 30px;
+    flex:2;
+    font-family: 'Libre Baskerville', serif;
+}
+.header-text h1 span{
+    font-family: 'Libre Baskerville', serif;
+    color: red;
+}
+.header-text p , .header-text p span{
+    font-family: 'Handjet', cursive;
+    font-size: 25px;
+}
+.header-image{
+    height: 70%;
+}
+.header-image img{
+    margin:auto; height: 100%; width:100%; object-fit: cover;
+}
+/* miniscreens */
+
+nav .fa-solid{
+    display:none;
+    cursor: pointer;
+}
+@media only screen and (max-width:780px){
+    .header-body{
+        flex-direction:row;
+        flex-wrap: wrap;
+        row-gap: -40px;
+        align-items:flex-start;
+        padding-top:20px;
+        
+    }
+    .header-text{
+        flex-grow:1;
+        flex-basis: 100%;
+        text-align:center;
+        padding-top:0px;
+        align-self: baseline;
+    }
+    .header-text h1{
+        font-size: 20px;
+    }
+    .header-text p , .header-text p span{
+        font-size: 18px;
+    }
+    nav .fa-solid{
+        display: block;
+    }
+    nav ul{
+        background-color: #111111;
+        position: fixed;
+        top:0;
+        right:-200px;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin:25px;
+    }
+    nav ul .fa-solid{
+        position:absolute;
+        top:25px;
+        left:25px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width:1130px){
+    .header-image{
+        height: 60%;
+    }
+}
+@media only screen and (max-width:450px){
+    .header-image{
+        height: 50%;
+    }
+
+}
+/* @media only screen and (max-width:375px){
+    .header-image{
+        height: 40%;
+    }
+
+} */
+/* experimental */
