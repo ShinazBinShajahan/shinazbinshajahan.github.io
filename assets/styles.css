@@ -156,11 +156,9 @@ nav .fa-solid{
 }
 @media only screen and (max-width:375px){
     .header-image{
-        height: 30vh;
+        height: 40%;
     }
-        .header-image img{
-        object-fit: contain;
-    }
+
 
 
 }
