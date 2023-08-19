@@ -156,7 +156,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width:375px){
     .header-image{
-        height: 40%;
+        height: 30vh;
     }
 
 }
