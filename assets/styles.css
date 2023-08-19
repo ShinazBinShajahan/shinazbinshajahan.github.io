@@ -88,7 +88,7 @@ nav ul li a:hover::after{
     height: 70%;
 }
 .header-image img{
-    margin:auto; height: 100%; width:100%; object-fit: cover;
+    margin:auto; height: 100%; width:100%; object-fit: cover;position:fixed;
 }
 /* miniscreens */
 
