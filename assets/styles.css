@@ -158,6 +158,10 @@ nav .fa-solid{
     .header-image{
         height: 30vh;
     }
+        .header-image img{
+        object-fit: contain;
+    }
+
 
 }
 /* experimental */
