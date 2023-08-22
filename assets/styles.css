@@ -1,3 +1,6 @@
+p , h1 ,h2 , h3, h4, h5, h6{
+    cursor:default;
+}
 a{
     text-decoration: none;
     color:#fff;
@@ -30,6 +33,25 @@ body{
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    position:relative;
+}
+.scrollbutton{
+    position: absolute;
+    bottom:20;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -12px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.scrollbutton:hover{
+    border-left: 4px solid rgb(80, 80, 80);
+    border-bottom: 4px solid rgb(80, 80, 80);
 }
 .container{
     padding:10px 8%;
@@ -52,7 +74,7 @@ nav ul li a{
 }
 nav ul li a::after{
     content: '';
-    width: 15%;
+    width: 0;
     height: 3px;
     background:#ff0416;
     position: absolute;
@@ -111,11 +133,12 @@ nav ul li a:hover::after{
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    
 }
-#about h2{
+#about h1{
     font-family: 'Libre Baskerville', serif;
 }
-#about h2 span{
+#about h1 span{
     font-family: 'Libre Baskerville', serif;
     color: #ff0416;
 }
@@ -129,11 +152,17 @@ nav ul li a:hover::after{
     justify-content:center; 
     align-items:flex-start;
     margin:20px 0 20px 0;
+    backdrop-filter: blur(3px) saturate(196%);
+    -webkit-backdrop-filter: blur(3px) saturate(196%);
+    background-color: rgba(62, 69, 71, 0.75);
+    border-radius: 5px;
+    border: 1px solid rgba(209, 213, 219, 0.18);
 }
 .about-image-container{
     flex:5%;
     /* border:1px solid blue; */
     aspect-ratio: 1/1;
+    margin:8px 0 0 8px;
 }
 .about-image-container img{
     object-fit: cover;
@@ -146,11 +175,43 @@ nav ul li a:hover::after{
     /* border:2px solid green;  */
     padding:20px; 
     text-align: justify;
+    display:flex;
+    flex-direction: column;
 }
 .about-text p{
     min-width:50px; font-size: 1rem;
 }
-
+.skills-and-ed{
+    width:100%;
+    padding:8px 4px 4px 4px;
+    color:#fcfcfc;
+}
+.skills-and-ed h3{
+    color:#d65963; 
+    margin:8px 0 5px 0;
+}
+.skills-and-ed ul{
+    border-left:2px solid white;
+    list-style: none; 
+    padding-left:5px;
+    position:relative;
+}
+.skills-and-ed ul li{
+    margin:10px 0 0 5px;
+}
+.skills-and-ed ul li h5{
+    font-size:medium; 
+    font-weight: 600;
+}
+.skills-and-ed ul li p:nth-child(3){
+    margin-top:6px;
+}
+.skills-and-ed ul li p:nth-child(4){
+    font-size:smaller;
+}
+.fa-circle-dot {
+    position: absolute; font-weight:100; left:-8.5px;
+}
 /* miniscreens */
 
 
