@@ -4,7 +4,7 @@ p , h1 ,h2 , h3, h4, h5, h6{
 a{
     text-decoration: none;
     color:#fff;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lexend', serif;
 }
 html{
     scroll-behavior: smooth;
@@ -13,12 +13,13 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Roboto',sans-serif;
     transition: all 0.5s;
 }
 body{
     background-color: #080808;
     color:#fff;
+    
 }
 .logo{
     height: 60px;
@@ -100,14 +101,14 @@ nav ul li a:hover::after{
 .header-text , .header-text h1{
     font-size: 30px;
     flex:2;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lexend', serif;
 }
 .header-text h1 span{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lexend', serif;
     color: red;
 }
 .header-text p , .header-text p span{
-    font-family: 'Handjet', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
     font-size: 25px;
 }
 .header-image{
@@ -162,7 +163,8 @@ nav ul li a:hover::after{
     flex:5%;
     /* border:1px solid blue; */
     aspect-ratio: 1/1;
-    margin:8px 0 0 8px;
+    /* margin:8px 0 0 8px; */
+    padding:20px 0 0 20px;
 }
 .about-image-container img{
     object-fit: cover;
@@ -199,18 +201,103 @@ nav ul li a:hover::after{
 .skills-and-ed ul li{
     margin:10px 0 0 5px;
 }
-.skills-and-ed ul li h5{
-    font-size:medium; 
-    font-weight: 600;
+.skills-and-ed ul li h5{ 
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1rem;
 }
 .skills-and-ed ul li p:nth-child(3){
     margin-top:6px;
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+
 }
 .skills-and-ed ul li p:nth-child(4){
-    font-size:smaller;
+    font-size:0.85rem;
+    font-family: 'Roboto';
 }
 .fa-circle-dot {
-    position: absolute; font-weight:100; left:-8.5px;
+    position: absolute;left:-9px;
+}
+.skillset-container{
+    display:grid; 
+    grid-template-columns: repeat(2,1fr); 
+    column-gap:8px; 
+    row-gap: 5px;
+    width:100%; 
+    border-radius: 3px; 
+    background-color: #5e5e5e07; 
+    padding:20px;
+}
+.skillset-container h3{
+    grid-column: 1 / span 2;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align:center;
+    color:#e4dadb; 
+    margin:8px 0 5px 0;
+    margin-bottom: 2rem;
+}
+.skillset{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+.skillset p{
+    color:#ddd;
+    font-weight: bolder;
+}
+.skill-bg{
+    background-color: rgb(182, 182, 182); 
+    height:1rem; 
+    width:100%; 
+    border-radius:1rem; 
+    padding:2px;
+}
+.skillprogress{
+    height:100%; 
+    border-radius:1rem;
+}
+.html-skill{
+    background-color: #4cbb6d; 
+    width:90%; 
+}
+.css-skill{
+    background-color: #4cbb6d; 
+    width:80%; 
+}
+.js-skill{
+    background-color: #bb4c56; 
+    width:50%; 
+}
+.uiux-skill{
+    background-color: #bb4c56; 
+    width:40%; 
+}
+.c-skill{
+    background-color:#4cbb6d; 
+    width:60%; 
+}
+.cpp-skill{
+    background-color:#4cbb6d; 
+    width:60%; 
+}
+.java-skill{
+    background-color:#4cbb6d; 
+    width:65%; 
+}
+.linux-skill{
+    background-color:#4cbb6d; 
+    width:70%; 
+}
+.py-skill{
+    background-color:#4cbb6d; 
+    width:80%; 
+}
+.sql-skill{
+    background-color:#bb4c56; 
+    width:50%; 
 }
 /* miniscreens */
 
@@ -226,6 +313,18 @@ nav .fa-solid{
         }
         .about-image-container{
             width:50%;
+        }
+        .skillset-container { 
+            grid-template-columns: 1fr 1fr;
+        }
+        .skillset-container h3{
+            font-size: 1.2rem;
+        }
+        .skillset{
+            flex-direction: column;
+        }
+        .skill-bg{
+            width:90%;
         }
     .header-body{
         flex-direction:row;
@@ -295,8 +394,11 @@ nav .fa-solid{
             font-size: 15px;
         }
     
+}
 
-
+}
+@media (min-width: 1200px) {
+    .skillset-container { grid-template-columns: repeat(3, 1fr); }
 }
 /* @media only screen and (max-width:375px){
     .header-image{
