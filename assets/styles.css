@@ -205,6 +205,7 @@ nav ul li a:hover::after{
     font-family: 'Roboto';
     font-weight: bolder;
     font-size: 1rem;
+    text-align: left;
 }
 .skills-and-ed ul li p:nth-child(3){
     margin-top:6px;
